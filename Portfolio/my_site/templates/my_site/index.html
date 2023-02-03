@@ -590,30 +590,35 @@
 
             </div>
 
-            <div class="row">
+
+                   <div class="row">
                 <div class="col-md-12">
 
-                    <!-- Contact form starts -->
+ <!-- Contact form starts -->
                     <div class="contact-form">
 
                         <!-- Submition status -->
-                        <div id="form-messages"></div>
 
-                        <form id="ajax-contact" action="{% static 'my_site/mailer.php'%}" method="post">
+
+                        <form id="ajax-contact" action="{% url 'main_page' %}" method="post">
+                            {% csrf_token %}
                             <div class="row">
-                                
+
                                 <div class="col-md-6">
                                     <div class="form-group in_name">
                                         <input type="text" name="name" class="form-control" id="name" placeholder="ИМЯ" required="required">
+                                        <div class="form-error">{{form.name.errors}}</div>
                                     </div>
                                     <div class="form-group in_email">
-                                        <input type="email" name="email" class="form-control" id="email" placeholder="ПОЧТА" required="required">
+                                        <input type="email" title="left@right.end" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" name="email" class="form-control" id="email" placeholder="ПОЧТА" required="required">
+                                        <div class="form-error">{{form.email.errors}}</div>
                                     </div>
                                 </div>
 
                                 <div class="col-md-6">
-                                    <div class="form-group in_message"> 
-                                        <textarea rows="5" name="message" class="form-control" id="message" placeholder="ВАШЕ СООБЩЕНИЕ" required="required"></textarea>
+                                    <div class="form-group in_message">
+                                        <textarea rows="5" name="feedback" class="form-control" id="feedback" placeholder="ВАШЕ СООБЩЕНИЕ" required="required"></textarea>
+                                        <div class="form-error">{{form.feedback.errors}}</div>
                                     </div>
                                 </div>
                                 <div class="col-md-12 text-center">
@@ -623,14 +628,19 @@
                                 </div>
                             </div>
                         </form>
-                    </div>
+                        </div>
                     <!-- Contact form ends-->
-                </div>
+                    </div>
             </div>
+
+
+
+
 
         </div>
     </section>
     <!-- Contact area ends -->
+
 
 
     <!-- Footer area starts -->
