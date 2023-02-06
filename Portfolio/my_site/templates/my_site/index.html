@@ -4,6 +4,23 @@
 <html lang="en">
 <head>
 
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(92333872, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/92333872" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+    
     <!-- meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -429,7 +446,7 @@
                             Прокси telegram-bot ChatGTP
                             </p>
                         <div>
-                            <a href="hhttps://github.com/Anatoly-Minchenkov/Light_GPT_Bot" >
+                            <a href="https://github.com/Anatoly-Minchenkov/Light_GPT_Bot" >
                                 <img src="{% static 'my_site/img/works/GPT.png'%}" alt="" class="img-responsive">
                                 <div class="overlay">
                                     <i class="fa fa-arrows-alt" aria-hidden="true"></i>
@@ -612,7 +629,7 @@
                                         <div class="form-error">{{form.name.errors}}</div>
                                     </div>
                                     <div class="form-group in_email">
-                                        <input type="email" title="left@right.end" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" name="email" class="form-control" id="email" placeholder="ПОЧТА" required="required">
+                                        <input type="email" title="left@right.end" pattern="[a-zA-Z0-9.-_-]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" name="email" class="form-control" id="email" placeholder="ПОЧТА" required="required">
                                         <div class="form-error">{{form.email.errors}}</div>
                                     </div>
                                 </div>
