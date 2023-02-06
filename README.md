@@ -3,8 +3,8 @@ This project is my portfolio website.
 In the course of my work, I learned how to work with:
 - Django (CBV, ORM, Admin panel)
 - CSS/HTML/javascript, learned fontawesome
-- DataBases (MySQL)
-- Project Deployment (PyTTY, Docker)
+- DataBases (MySQL, DjangoORM)
+- Project Deployment (PyTTY, Apache)
 
 Site link: https://aminchenkov.ru/
 
