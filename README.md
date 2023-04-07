@@ -6,7 +6,7 @@ Website-link: https://aminchenkov.ru/
 ### :computer: Technologies:
 - Django (CBV, ORM, Admin panel);
 - DataBases (MySQL, DjangoORM);
-- CSS/HTML/javascript (practice, learned fontawesome);
+- CSS/HTML/javascript (bootstrap, learned fontawesome);
 - Project Deployment (PyTTY, Apache).
 
 
